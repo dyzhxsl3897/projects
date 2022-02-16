@@ -17,5 +17,16 @@ spec:
       containers:
         - name: backend
           image: denglufei/backend:1.0.2
+          args: ["--spring.config.location=/config/application.properties"]
+          volumeMounts:
+            - name: backend-config-volume
+              mountPath: config
           ports:
             - containerPort: 8080
+      volumes:
+        - name: backend-config-volume
+          configMap:
+            name: backend-config
+            items:
+              - key: application.properties
+                path: application.properties
