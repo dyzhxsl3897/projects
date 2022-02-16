@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableScheduling
-@PropertySource("classpath:settings.properties")
 public class BackendApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
