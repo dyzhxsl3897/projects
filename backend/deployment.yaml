@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: denglufei/backend:1.0.2
+          image: denglufei/backend:1.0.3
           args: ["--spring.config.location=/config/application.properties"]
           volumeMounts:
             - name: backend-config-volume

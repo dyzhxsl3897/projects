@@ -12,7 +12,7 @@ import com.dyzhxsl.backend.dao.entities.CurrencyHistory;
 import com.dyzhxsl.backend.services.CurrencyService;
 
 @RestController
-@RequestMapping("/currency")
+@RequestMapping("/")
 public class CurrencyController {
 
 	@Autowired
